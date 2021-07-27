@@ -16,7 +16,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100%;
   }
 
 .visorVisita
@@ -26,6 +26,57 @@ body
     color: #ECF0F1;
     width: 50px;
     text-align: center;
+}
+
+.fondoForm
+{
+    border-radius: 3vh;
+    border-color:#ABB2B9 ;
+    width: 50vh;
+    height: 100%;
+}
+.tituloForm{
+
+    margin-top: 5%;
+    color: #ABB2B9;
+    font-size: 7vh;
+    text-align: center;
+    justify-content: center;
+}
+
+.txtForm{
+  
+  margin-bottom: 5%;
+  text-align: center;
+  border: 5px, #555;
+  border-radius: 10px;
+  width: 60%;
+}
+.sobreGit{
+  margin: 10%;
+}
+.sobreGit:hover
+{
+  margin-right: 10%;
+  content: url(img/Git\ Activo.png);
+  
+}
+
+.sobreLink{
+  margin: 10%;
+}
+.sobreLink:hover{
+  margin-right: 10%;
+  content: url(img/linkedin\ Activo.png);
+}
+
+.sobreWhats{
+  margin: 10%;
+}
+.sobreWhats:hover{
+
+  margin-right: 10%;
+  content: url(img/W\ Activo.png);
 }
 
 
@@ -48,4 +99,11 @@ body
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+
+
+
+
+
 

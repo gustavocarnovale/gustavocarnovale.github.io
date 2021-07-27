@@ -21,66 +21,87 @@
 </head>
 
 <body>
-        <div class="fixed-top">
-            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                <div class="container-fluid ">
-                    <button id="btnCollapse" class="navbar-toggler" data-toggle="collapse" data-target="#navResp">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navResp">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link 1" href="#sobremi"><img src="img/sobre mi.png" />Sobremi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#proyectos"><img src="img/code.png" /> Mis Proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contacto"><img src="img/contacto.png" />Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link"> <img src="img/visitante.png">visitante N° <input class="visorVisita"
-                                        id="muestraVisita" type="text"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand">Carnovale Gustavo</a>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid ">
+                <button id="btnCollapse" class="navbar-toggler" data-toggle="collapse" data-target="#navResp">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navResp">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link 1" href="#sobremi"><img src="img/sobre mi.png" />Sobremi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos"><img src="img/code.png" /> Mis Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto"><img src="img/contacto.png" />Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"> <img src="img/visitante.png">visitante N° <input class="visorVisita"
+                                    id="muestraVisita" type="text"></a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+                <a class="navbar-brand">Carnovale Gustavo</a>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+
+        <a name="sobremi"></a>
+        <div class="superCentrado centrado">
+
+            <h2>
+                Busco integrarme de forma profesional al sector IT, tengo estudios relacionados a la informática
+                y
+                actualmente me capacito en lenguajes de programación a través de
+                plataformas digitales.Tengo muy buena capacidad de aprendizaje, y muchas ganas de empezar a
+                transitar
+                este camino.
+            </h2>
+
         </div>
-        
-        <div>
-        
-            <a name="sobremi"></a>
-            <div class="superCentrado centrado">
-        
-                <h2>
-                    Busco integrarme de forma profesional al sector IT, tengo estudios relacionados a la informática
-                    y
-                    actualmente me capacito en lenguajes de programación a través de
-                    plataformas digitales.Tengo muy buena capacidad de aprendizaje, y muchas ganas de empezar a
-                    transitar
-                    este camino.
-                </h2>
-        
-            </div>
-        
-            <a name="proyectos"></a>
-        
-            <div class="superCentrado centrado">
-        
-                <p>Proyectos</p>
-        
-            </div>
-        
-            <a name="contacto"></a>
-        
-            <div class="superCentrado centrado">
-        
-                <p>Contacto</p>
-        
+
+        <a name="proyectos"></a>
+
+        <div class="superCentrado centrado">
+
+            <p>Proyectos</p>
+
+        </div>
+
+        <a name="contacto"></a>
+        <div class="superCentrado">
+            <div class="fondoForm bg-dark">
+                <div class="centrado">
+                    <label class="tituloForm"> Contacto </label>
+                </div>
+                
+                <div>
+                    <form action="" method="post">
+                        <div class="mb-3 centrado">
+
+                            <input type="email" class="txtForm" id="" placeholder="user@mail.com"><br>
+
+                            <input type="text" class="txtForm" id="" placeholder="Nombre"><br>
+
+                            <textarea class="txtForm" id="" rows="7" placeholder="Aca podés escribir..."></textarea><br>
+                            <button class="btn btn-secondary btnForm">Enviar</button>
+                            <div>
+                             <a href="https://github.com/gustavocarnovale"><img class="sobreGit" src="img/Git Inactivo.png"></a>   
+                             <a href="https://www.linkedin.com/in/gustavocarnovale"><img class="sobreLink" src="img/linkedin Inactivo.png"></a>   
+                              <a href="https://api.whatsapp.com/send?phone=541138731443&text=Hola%20Gustavo!%20Me%20quisiera%20contactar%20con%20vos."><img class="sobreWhats" src="img/W Inactivo.png"></a>  
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </div>
 
 
 
@@ -103,13 +124,19 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <script src="scripts.js"></script>
 
 </body>
