@@ -7,5 +7,11 @@ window.onload = (event) =>{
     })
 
     db.ref('visits').push(1);
+
+    $(".nav-link").on('click', function(){
+
+        $(".collapse").collapse("hide")
+
+    })
 }
 
