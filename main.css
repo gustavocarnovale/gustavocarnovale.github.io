@@ -1,0 +1,27 @@
+body
+{
+    background-image: linear-gradient(0, #9b94ff 0, #7275d0 25%, #4c559c 50%, #2a376b 75%, #0e1c3e 100%);
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Alegreya', serif;
+}
+
+.centrado
+{
+    text-align: center;
+}
+
+.superCentrado 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+
+.visorVisita
+{
+    background: transparent;
+    border: none;
+    color: #ECF0F1;
+}
