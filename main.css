@@ -24,6 +24,8 @@ body
     background: transparent;
     border: none;
     color: #ECF0F1;
+    width: 50px;
+    text-align: center;
 }
 
 
@@ -46,3 +48,4 @@ body
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
