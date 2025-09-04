@@ -83,6 +83,30 @@ body {
     transform: translateY(-2px);
 }
 
+/* Botón de descarga de CV */
+.cv-download-btn {
+    background: linear-gradient(135deg, var(--primary-pastel), var(--secondary-pastel));
+    border-radius: 20px;
+    padding: 8px 16px !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-weight: 600;
+    color: var(--text-dark) !important;
+}
+
+.cv-download-btn:hover {
+    background: linear-gradient(135deg, var(--secondary-pastel), var(--accent-pastel));
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px var(--shadow);
+    border-color: var(--white);
+    color: var(--text-dark) !important;
+}
+
+.cv-download-btn:active {
+    transform: translateY(-1px);
+}
+
 .nav-link img {
     width: 20px;
     height: 20px;
@@ -247,6 +271,16 @@ body {
     
     .content-card {
         padding: 2rem;
+    }
+    
+    .cv-download-btn {
+        font-size: 0.9rem;
+        padding: 6px 12px !important;
+        margin-left: 5px;
+    }
+    
+    .nav-link {
+        margin: 0 5px;
     }
 }
 

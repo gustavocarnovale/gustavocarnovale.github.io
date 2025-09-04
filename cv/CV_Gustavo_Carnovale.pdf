@@ -1,0 +1,103 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 200
+>>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Gustavo Carnovale) Tj
+0 -50 Td
+/F1 16 Tf
+(Desarrollador en Formación) Tj
+0 -30 Td
+/F1 14 Tf
+(Email: gustavo@email.com) Tj
+0 -20 Td
+(LinkedIn: linkedin.com/in/gustavocarnovale) Tj
+0 -20 Td
+(GitHub: github.com/gustavocarnovale) Tj
+0 -40 Td
+/F1 18 Tf
+(Perfil Profesional) Tj
+0 -30 Td
+/F1 12 Tf
+(Busco integrarme de forma profesional al sector IT.) Tj
+0 -15 Td
+(Tengo estudios relacionados a la informática y) Tj
+0 -15 Td
+(actualmente me capacito en lenguajes de programación) Tj
+0 -15 Td
+(a través de plataformas digitales.) Tj
+0 -30 Td
+/F1 18 Tf
+(Habilidades) Tj
+0 -30 Td
+/F1 12 Tf
+(• HTML, CSS, JavaScript) Tj
+0 -15 Td
+(• Bootstrap) Tj
+0 -15 Td
+(• Firebase) Tj
+0 -15 Td
+(• Git/GitHub) Tj
+0 -15 Td
+(• Capacidad de aprendizaje) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000274 00000 n 
+0000000525 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+610
+%%EOF
