@@ -40,8 +40,40 @@ function closeMobileMenu() {
     }
 }
 
+// Variables para el header inteligente
+let lastScrollTop = 0;
+let header = null;
+
+// Función para el header inteligente
+function initSmartHeader() {
+    header = document.querySelector('.navbar');
+    if (header) {
+        header.classList.add('navbar-smart');
+    }
+}
+
+// Función para manejar el scroll del header
+function handleHeaderScroll() {
+    if (!header) return;
+    
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (currentScrollTop > lastScrollTop && currentScrollTop > 100) {
+        // Scroll hacia abajo - ocultar header
+        header.classList.add('navbar-hidden');
+    } else {
+        // Scroll hacia arriba - mostrar header
+        header.classList.remove('navbar-hidden');
+    }
+    
+    lastScrollTop = currentScrollTop;
+}
+
 // Inicialización cuando la página carga
 window.onload = (event) => {
+    // Inicializar header inteligente
+    initSmartHeader();
+    
     // Contador de visitantes
     db.ref('visits').once('value', (snapshot) => {
         const data = snapshot.val();
@@ -100,4 +132,7 @@ window.onload = (event) => {
         });
     }
 };
+
+// Event listener para el scroll
+window.addEventListener('scroll', handleHeaderScroll, { passive: true });
 
