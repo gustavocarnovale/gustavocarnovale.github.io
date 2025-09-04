@@ -231,6 +231,144 @@ body {
     font-weight: 600;
 }
 
+/* Tarjetas de proyectos */
+.project-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 10px 30px var(--shadow);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px var(--shadow);
+}
+
+.project-thumbnail {
+    position: relative;
+    flex-shrink: 0;
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px var(--shadow);
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-thumbnail:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-thumbnail:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-link {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+    color: var(--accent-pastel);
+    transform: scale(1.2);
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, var(--primary-pastel), var(--secondary-pastel));
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary-pastel), var(--secondary-pastel));
+    color: var(--text-dark);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, var(--secondary-pastel), var(--accent-pastel));
+    color: var(--text-dark);
+}
+
+.project-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow);
+    color: var(--text-dark);
+}
+
 
 /* Scrollbar personalizado */
 ::-webkit-scrollbar {
@@ -281,6 +419,27 @@ body {
     
     .nav-link {
         margin: 0 5px;
+    }
+    
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .project-thumbnail {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 1rem;
+    }
+    
+    .project-links {
+        justify-content: center;
+    }
+    
+    .project-btn {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 0.5rem;
     }
 }
 
