@@ -51,10 +51,12 @@ body {
 
 .superCentrado {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     padding: 2rem;
+    text-align: center;
 }
 
 /* Navegación mejorada */
@@ -240,8 +242,9 @@ body {
     box-shadow: 0 10px 30px var(--shadow);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -252,12 +255,12 @@ body {
 
 .project-thumbnail {
     position: relative;
-    flex-shrink: 0;
     width: 300px;
     height: 200px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow);
+    margin-bottom: 1.5rem;
 }
 
 .project-image {
@@ -321,18 +324,16 @@ body {
 .project-tech {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
 .tech-tag {
-    background: linear-gradient(135deg, var(--primary-pastel), var(--secondary-pastel));
     color: var(--text-dark);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
     font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+    margin: 0 0.5rem;
 }
 
 .project-links {
